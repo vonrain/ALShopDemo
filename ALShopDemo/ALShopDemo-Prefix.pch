@@ -1,0 +1,50 @@
+//
+//  ALShopDemo-Prefix.pch
+//  ALShopDemo
+//
+//  Created by allen on 9/11/17.
+//  Copyright © 2017 allen. All rights reserved.
+//
+
+#ifndef ALShopDemo_Prefix_pch
+#define ALShopDemo_Prefix_pch
+#ifdef __OBJC__
+#import <Foundation/Foundation.h>
+
+#import "MBProgressHUD.h"
+#import "ComponentsFactory.h"
+#import "bussineDataService.h"
+#import "AppDelegate.h"
+#import "message.h"
+
+#define des_key                 @""
+
+#define userDefault  [NSUserDefaults standardUserDefaults]
+
+#define MainHeight  [[UIScreen mainScreen] bounds].size.height
+#define MainWidth   [[UIScreen mainScreen] bounds].size.width
+
+#define service_IP                @"http://"        //现网
+#define service_url                 service_IP@"//json.do"//现网
+
+#define UATservice_IP              @"http://"
+#define UATservice_url             UATservice_IP@"//mapp/json.do"
+
+#define QAservice_IP                @"http://."
+#define QAservice_url               QAservice_IP@"///json.do"
+
+#define DEVservice_IP               @"http://."
+#define DEVservice_url              DEVservice_IP@"//json.do"    //开发测试
+
+#endif
+
+#ifdef DEBUG
+//调试状态
+#define MyString [NSString stringWithFormat:@"%s", __FILE__].lastPathComponent
+#define MyLog(...) printf(" %s 第%d行: %s\n\n", [MyString UTF8String] ,__LINE__, [[NSString stringWithFormat:__VA_ARGS__] UTF8String]);
+#else
+#define MyLog(...)
+#endif
+
+
+#endif /* ALShopDemo_Prefix_pch */
