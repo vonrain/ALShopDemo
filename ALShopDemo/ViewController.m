@@ -32,10 +32,8 @@
                           [NSDictionary dictionaryWithObjectsAndKeys:@(NO),@"isLogin", nil],@"expand",
                           @"",@"usercode",
                           @"",@"pwd",
-                          [NSNumber numberWithBool:YES],@"isHouTai",
                           nil];
     [bussineService login:data];
-    
 }
 
 -(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {

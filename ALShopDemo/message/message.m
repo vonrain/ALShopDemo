@@ -9,26 +9,12 @@
 #import "ComponentsFactory.h"
 #import "ASI/ASIHTTP.h"
 #import "GTMBase64.h"
-//#import "JSONKit.h"
-
-
 
 //这些私有接口，具体的项目要对应修改
 @interface message (private)
 @end
 
 @implementation message
-
-@synthesize jsonRspData;
-@synthesize rspCode;
-@synthesize rspDesc;
-@synthesize rspInfo;
-@synthesize requestInfo;
-@synthesize bizCode;
-@synthesize responseInfo;
-
-@synthesize compressed;
-@synthesize responseCompressed;
 
 -(id)init
 {
@@ -140,25 +126,12 @@
 -(void)parseMessage{
 }
 
-- (BOOL)isHouTai{
-    if([requestInfo objectForKey:@"isHouTai"]==nil){
-        return NO;
-    }else
-        return [[requestInfo objectForKey:@"isHouTai"] boolValue];
-}
-
 - (void)parse:(NSString *)responseMessage {
     NSString* responseStr = nil;
-#ifdef STATIC_XML
-    responseStr = responseMessage;
-#else
     //可以进行解密
     MyLog(@"解密开始+========================");
-
     responseStr = responseMessage;
     responseStr = [message hexStringDes:responseMessage withEncrypt:NO];
-#endif
-//    NSLog(@"responseStr=%@",responseStr);
     MyLog(@"解密结束+========================");
 
 	if (nil != responseMessage) {
@@ -171,9 +144,6 @@
                                                   options:NSJSONReadingMutableContainers
                                                     error:nil];
             
-            
-            MyLog(@"====================== 服务端返回的data：%@  \n ================",dic);
-
             MyLog(@"JSON转换 结束 \n 服务端返回数据  %@",dic);
             
             self.jsonRspData = dic;

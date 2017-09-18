@@ -23,8 +23,8 @@
     
 	NSString* BundleVersion = [[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFBundleShortVersionString"];
     
-    NSString *usercode = [requestInfo objectForKey:@"usercode"];
-    NSString *pwd = [requestInfo objectForKey:@"pwd"];
+    NSString *usercode = [self.requestInfo objectForKey:@"usercode"];
+    NSString *pwd = [self.requestInfo objectForKey:@"pwd"];
     float version = [[[UIDevice currentDevice] systemVersion] floatValue];
 
     bussineDataService *bus=[bussineDataService sharedDataService];
@@ -33,7 +33,7 @@
     
     NSString *requestClass = [[NSString alloc] initWithFormat:JSON_BODY_REUEST,[LOGIN_BIZCODE uppercaseString]];
     NSDictionary *bodyData = [[NSDictionary alloc] initWithObjectsAndKeys:
-                              [requestInfo objectForKey:@"expand"]==nil?[NSNull null]:[requestInfo objectForKey:@"expand"],@"expand",
+                              [self.requestInfo objectForKey:@"expand"]==nil?[NSNull null]:[self.requestInfo objectForKey:@"expand"],@"expand",
                               requestClass,@"@class",
                               USER_SVC,@"svc",
                               usercode,@"usercode",

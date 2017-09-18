@@ -24,9 +24,6 @@
 		C70169E31F663BA600AB85B0 /* DesCryptor.m in Sources */ = {isa = PBXBuildFile; fileRef = C70169E01F663BA600AB85B0 /* DesCryptor.m */; };
 		C70169E41F663BA600AB85B0 /* DesToHexString.m in Sources */ = {isa = PBXBuildFile; fileRef = C70169E21F663BA600AB85B0 /* DesToHexString.m */; };
 		C70169E71F663BF500AB85B0 /* ComponentsFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = C70169E61F663BF500AB85B0 /* ComponentsFactory.m */; };
-		C70169EA1F663E0300AB85B0 /* LoginHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = C70169E91F663E0300AB85B0 /* LoginHandler.m */; };
-		C70169F01F663F4700AB85B0 /* YHLoadCenterView.m in Sources */ = {isa = PBXBuildFile; fileRef = C70169ED1F663F4700AB85B0 /* YHLoadCenterView.m */; };
-		C70169F11F663F4700AB85B0 /* YHLoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = C70169EF1F663F4700AB85B0 /* YHLoadingView.m */; };
 		C72E2A9B1F677BCD00BCE844 /* libHttpConnector.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C72E2A9A1F677BCD00BCE844 /* libHttpConnector.a */; };
 		C72E2A9D1F677F3700BCE844 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C72E2A9C1F677F3700BCE844 /* SystemConfiguration.framework */; };
 		C72E2A9F1F677F8500BCE844 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C72E2A9E1F677F8500BCE844 /* MobileCoreServices.framework */; };
@@ -94,12 +91,6 @@
 		C70169E21F663BA600AB85B0 /* DesToHexString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DesToHexString.m; sourceTree = "<group>"; };
 		C70169E51F663BF500AB85B0 /* ComponentsFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ComponentsFactory.h; sourceTree = "<group>"; };
 		C70169E61F663BF500AB85B0 /* ComponentsFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ComponentsFactory.m; sourceTree = "<group>"; };
-		C70169E81F663E0300AB85B0 /* LoginHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginHandler.h; sourceTree = "<group>"; };
-		C70169E91F663E0300AB85B0 /* LoginHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginHandler.m; sourceTree = "<group>"; };
-		C70169EC1F663F4700AB85B0 /* YHLoadCenterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHLoadCenterView.h; sourceTree = "<group>"; };
-		C70169ED1F663F4700AB85B0 /* YHLoadCenterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YHLoadCenterView.m; sourceTree = "<group>"; };
-		C70169EE1F663F4700AB85B0 /* YHLoadingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHLoadingView.h; sourceTree = "<group>"; };
-		C70169EF1F663F4700AB85B0 /* YHLoadingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YHLoadingView.m; sourceTree = "<group>"; };
 		C72E2A9A1F677BCD00BCE844 /* libHttpConnector.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libHttpConnector.a; path = ALShopDemo/lib/libHttpConnector.a; sourceTree = "<group>"; };
 		C72E2A9C1F677F3700BCE844 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		C72E2A9E1F677F8500BCE844 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
@@ -108,6 +99,9 @@
 		C72E2AA41F67814A00BCE844 /* libxml2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.tbd; path = usr/lib/libxml2.tbd; sourceTree = SDKROOT; };
 		C72E2AA61F67819400BCE844 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		C7662F881F6661800029A755 /* ALShopDemo-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ALShopDemo-Prefix.pch"; sourceTree = "<group>"; };
+		C7F1F4721F6A754D0012967A /* HttpConnector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HttpConnector.h; sourceTree = "<group>"; };
+		C7F1F4731F6A754D0012967A /* HttpStatus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HttpStatus.h; sourceTree = "<group>"; };
+		C7F1F4741F6A754D0012967A /* MessageDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageDelegate.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -192,6 +186,7 @@
 		C70169831F661C5E00AB85B0 /* ALShopDemo */ = {
 			isa = PBXGroup;
 			children = (
+				C7F1F4711F6A754D0012967A /* httpConnector */,
 				C70169B71F66249800AB85B0 /* message */,
 				C70169CC1F663AE600AB85B0 /* Tools */,
 				C70169871F661C5E00AB85B0 /* AppDelegate.h */,
@@ -202,8 +197,6 @@
 				C70169C01F66258C00AB85B0 /* bussineDataService.m */,
 				C701698A1F661C5E00AB85B0 /* ViewController.h */,
 				C701698B1F661C5E00AB85B0 /* ViewController.m */,
-				C70169E81F663E0300AB85B0 /* LoginHandler.h */,
-				C70169E91F663E0300AB85B0 /* LoginHandler.m */,
 				C70169901F661C5E00AB85B0 /* Assets.xcassets */,
 				C70169951F661C5E00AB85B0 /* Info.plist */,
 				C70169841F661C5E00AB85B0 /* Supporting Files */,
@@ -253,7 +246,6 @@
 			children = (
 				C70169E51F663BF500AB85B0 /* ComponentsFactory.h */,
 				C70169E61F663BF500AB85B0 /* ComponentsFactory.m */,
-				C70169EB1F663F4700AB85B0 /* LoadView */,
 				C70169DE1F663BA600AB85B0 /* Des */,
 				C70169D21F663B6D00AB85B0 /* DeviceInterfaceEx */,
 				C70169CD1F663B0E00AB85B0 /* Base64 */,
@@ -304,15 +296,15 @@
 			path = Des;
 			sourceTree = "<group>";
 		};
-		C70169EB1F663F4700AB85B0 /* LoadView */ = {
+		C7F1F4711F6A754D0012967A /* httpConnector */ = {
 			isa = PBXGroup;
 			children = (
-				C70169EC1F663F4700AB85B0 /* YHLoadCenterView.h */,
-				C70169ED1F663F4700AB85B0 /* YHLoadCenterView.m */,
-				C70169EE1F663F4700AB85B0 /* YHLoadingView.h */,
-				C70169EF1F663F4700AB85B0 /* YHLoadingView.m */,
+				C7F1F4721F6A754D0012967A /* HttpConnector.h */,
+				C7F1F4731F6A754D0012967A /* HttpStatus.h */,
+				C7F1F4741F6A754D0012967A /* MessageDelegate.h */,
 			);
-			path = LoadView;
+			name = httpConnector;
+			path = lib/include/httpConnector;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -498,15 +490,12 @@
 				C70169BA1F66249800AB85B0 /* message.m in Sources */,
 				C70169E31F663BA600AB85B0 /* DesCryptor.m in Sources */,
 				C70169DD1F663B6D00AB85B0 /* UIDevice-Reachability.m in Sources */,
-				C70169F11F663F4700AB85B0 /* YHLoadingView.m in Sources */,
 				C70169BE1F66251B00AB85B0 /* LoginMessage.m in Sources */,
 				C70169891F661C5E00AB85B0 /* AppDelegate.m in Sources */,
 				C70169DC1F663B6D00AB85B0 /* UIDevice-Hardware.m in Sources */,
 				C70169861F661C5E00AB85B0 /* main.m in Sources */,
 				C70169E71F663BF500AB85B0 /* ComponentsFactory.m in Sources */,
-				C70169F01F663F4700AB85B0 /* YHLoadCenterView.m in Sources */,
 				C70169DB1F663B6D00AB85B0 /* wwanconnect.c in Sources */,
-				C70169EA1F663E0300AB85B0 /* LoginHandler.m in Sources */,
 				C70169C11F66258C00AB85B0 /* bussineDataService.m in Sources */,
 				C70169E41F663BA600AB85B0 /* DesToHexString.m in Sources */,
 				C70169D11F663B0E00AB85B0 /* GTMBase64.m in Sources */,

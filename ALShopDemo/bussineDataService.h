@@ -6,11 +6,6 @@
 #import "httpConnector/HttpStatus.h"
 #import "httpConnector/HttpConnector.h"
 #import "message_def.h"
-//#import "MBProgressHUD.h"
-#import "YHLoadingView.h"
-#import "YHLoadCenterView.h"
-
-
 
 #define kForceUpdateTag         100
 #define kLinkErrorTag           101
@@ -50,9 +45,6 @@
     NSMutableArray *    TaoCanArr;//纪录选择的套餐
     NSMutableDictionary *    HuanCunXinxiDic;
     int netWorkAccessTime;
-    
-    MBProgressHUD *HUD;
-    YHLoadCenterView *loadView;
 }
 
 //@property (nonatomic,assign) BOOL isLogin; //是否已
@@ -84,12 +76,6 @@
 @property (assign)BOOL isFirstSearch;
 
 +(bussineDataService *) sharedDataService;
-+(bussineDataService *) sharedDataServiceOne;
-+(bussineDataService *) sharedDataServiceTwo;
-+(bussineDataService *) sharedDataServiceThree;
-+(bussineDataService *) sharedDataServiceFour;
-+(bussineDataService *) sharedDataServiceFive;
-+(bussineDataService *) sharedDataServiceSix;
 
 /**
  *  取消请求
@@ -99,12 +85,5 @@
 #pragma mark
 #pragma mark - 登陆模块
 - (void)login:(NSDictionary *)paramters;
-
-#pragma mark
-#pragma mark - H5网络请求
-- (void)sendH5Request:(NSDictionary *)paramters;
-
-- (void)showHUD:(NSString *)msg toWindowView:(UIView *)view;
-- (void)removeHUD;
 
 @end

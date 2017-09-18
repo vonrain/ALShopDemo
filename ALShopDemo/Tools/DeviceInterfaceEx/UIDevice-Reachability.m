@@ -14,7 +14,6 @@
 #import <dlfcn.h>
 #import "UIDevice-Reachability.h"
 #import "wwanconnect.h"
-//#import "LoginHandler.h"
 #import "Reachability.h"
 
 
@@ -196,15 +195,6 @@ SCNetworkReachabilityRef reachability;
         BOOL needsConnection = ((connectionFlags & kSCNetworkFlagsConnectionRequired) != 0);
         
         BOOL isNetWork = (isReachable && !needsConnection) ? YES : NO;
-//        if (!isNetWork) {
-//            if (![LoginHandler defaultStack].alertView ) {
-//                [LoginHandler defaultStack].alertView = [[UIAlertView alloc] initWithTitle:@"提示" message:@"您当前无网络连接，请查看手机网络设置！" delegate:self cancelButtonTitle:@"确定"otherButtonTitles:nil];
-//                [[LoginHandler defaultStack].alertView show];
-//                
-//            }
-//            
-//            
-//        }
         
         return isNetWork;
     }

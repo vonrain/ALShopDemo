@@ -14,32 +14,13 @@
 
 #define CGBASISREQUEST    @"CGBASIS"
 
-@interface message : NSObject<MessageDelegate>{
-	NSString* rspCode;
-	NSString* rspDesc;
-    
-    NSString* responseInfo;
-    
-    NSDictionary *jsonRspData;
-    
-    //返回包体解析存储字典及发送包体字典
-    NSDictionary *rspInfo;
-    NSDictionary *requestInfo;
-    NSString *requestH5Info;
-    
-    NSString* bizCode;
-    
-    BOOL compressed;
-    BOOL responseCompressed;
-    
-}
+@interface message : NSObject<MessageDelegate>
 
 @property(nonatomic, strong)NSDictionary *jsonRspData;
 @property(nonatomic, strong)NSString* rspCode;
 @property(nonatomic, strong)NSString* rspDesc;
-@property(nonatomic, strong)NSDictionary *rspInfo;
+@property(nonatomic, strong)NSDictionary *rspInfo;  //返回包体解析存储字典及发送包体字典
 @property(nonatomic, strong)NSDictionary *requestInfo;
-//@property(nonatomic, retain)NSString *requestH5Info;
 @property(nonatomic, strong)NSString* bizCode;
 @property(nonatomic, strong)NSString* responseInfo;
 @property(nonatomic, assign)BOOL compressed;
